@@ -25,6 +25,6 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: Color Files JSON
-        path: assets
+        path: assets/colornames.json
       env:
         CI: true
