@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Build
       run: |
-        curl -o colornames.txt https://colornames.org/download/colornames.txt
+        curl -o colornames.txt https://colornames.org/download/generate.php
         node .
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
