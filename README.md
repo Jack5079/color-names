@@ -2,7 +2,6 @@
 
 creates a json file based off of color names from [colornames.org](//colornames.org)
 
-
 ## How to download the JSON file
 
 Please refer to the following GIF:
