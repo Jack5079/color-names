@@ -5,12 +5,7 @@ const formatted = names
   .filter( str => !str.startsWith( '#' ) ) // Remove comments
   .map( str => str.split( ',' ) ) // Split lines using commas
 
-const obj = new Object
-
-formatted.forEach( str => {
-  obj[ str[ 0 ] ] = str[ 1 ]
-} )
-
+const obj = Object.fromEntries(formatted)
 
 if ( !existsSync( 'assets/' ) ) mkdirSync( 'assets' )
 
